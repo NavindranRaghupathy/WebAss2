@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "left-menu content right-menu"
+        "footer footer footer";
+    grid-template-rows: 100px 1fr 50px; /* Header, Content, Footer */
+    grid-template-columns: 200px 1fr 200px; /* Left Menu, Content, Right Menu */
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: #fff;
+    background-image : url("jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+}
+
+.image{
+	width : 100px;
+	height :100px;
+	position : relative;
+	top : -1px;
+}
+
+.link{
+	float:right;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	color : white;
+}
+
+.logo{
+    color : #fff;
+    font-size : 35px;
+    font-weight : 600;
+    padding: 5px 0 0 35px;
+    background-color: #343434;
+    width : 200px;
+    height : 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li{
+    list-style : none;
+    padding-top: 50px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition: padding 0.5s ease;
+    display: flex;
+    align-items: center;/*This will vertically center align the items */
+    justify-content: flex-start; 
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a:hover{
+    color:cyan;
+    background-color: #1b1b1b;
+    padding:15px;
+    border-style:solid;
+    border-right: white;
+}
+
+.img1{
+    margin-right: 5px;
+}
+
+/* .Home{
+    padding-left: 0px;
+}
+
+.About{
+    padding-left: 30px;
+}
+
+.Service{
+    padding-left: 30px;
+}
+
+.Faq{
+    padding-left: 40px;
+} */
+
+.link:hover{
+	background-color : white;
+	color : black;
+	border : 2px solid black;
+	border-radius : 15px;
+	text-decoration : underline;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: black;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: #ddd;
+    padding: 20px;
+    background-image: url("https://media.istockphoto.com/id/1328182974/video/4k-global-earth-map-rotating-digital-world-breaking-news-studio-loop-background.jpg?s=640x640&k=20&c=rSa1fIMB4jYYUmL_E7RIZy_UXNmf1DJEqz-9QZ7JL0M=");
+}
+
+.content {
+    background-image : url("https://getwallpapers.com/wallpaper/full/2/e/a/256171.jpg");
+    grid-area: content;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
