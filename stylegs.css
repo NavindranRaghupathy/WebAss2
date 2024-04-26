@@ -25,6 +25,22 @@ body {
 	top : -1px;
 }
 
+.content {
+    grid-area: content;
+    padding: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #595959 , #909090 , #C5C6C7);
+}
+.content-section {
+  display: flex; /*Make it a flex container */
+  padding: 10px;
+}
+
+.content-section img {
+  width: 20%; /* Adjust as needed */
+  margin-right: 10px; /* Add margin to the right */
+}
+
 .link{
 	float:right;
 	padding: 10px 15px;
@@ -42,7 +58,7 @@ body {
     font-weight : 600;
     padding: 5px 0 0 35px;
     background-color: #343434;
-    width : 200px;
+    width : 165px;
     height : 50px;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -57,10 +73,10 @@ nav ul li a{
     color:#fff;
     transition: padding 0.5s ease;
     display: flex;
-    align-items: center;/*This will vertically center align the items */
-    justify-content: flex-start; 
-    position: relative;
-    overflow: hidden;
+    align-items: center;/*This will vertically center align the items*/
+     /*justify-content: flex-start; */
+    /*position: relative;*/
+    /*overflow: hidden;*/
 }
 
 nav ul li a:hover{
@@ -69,27 +85,12 @@ nav ul li a:hover{
     padding:15px;
     border-style:solid;
     border-right: white;
+    border-color: white;
 }
 
-.img1{
+.img{
     margin-right: 5px;
 }
-
-/* .Home{
-    padding-left: 0px;
-}
-
-.About{
-    padding-left: 30px;
-}
-
-.Service{
-    padding-left: 30px;
-}
-
-.Faq{
-    padding-left: 40px;
-} */
 
 .link:hover{
 	background-color : white;
@@ -106,21 +107,38 @@ nav ul li a:hover{
 
 .right-menu {
     grid-area: right-menu;
-    background-color: #ddd;
-    padding: 20px;
-    background-image: url("https://media.istockphoto.com/id/1328182974/video/4k-global-earth-map-rotating-digital-world-breaking-news-studio-loop-background.jpg?s=640x640&k=20&c=rSa1fIMB4jYYUmL_E7RIZy_UXNmf1DJEqz-9QZ7JL0M=");
+    border: 5px solid black;
+    border-top: none;
+    border-bottom: none;
+    background-image: linear-gradient(to right, #A9A9A9 , #36454F);
 }
 
 .content {
-    background-image : url("https://getwallpapers.com/wallpaper/full/2/e/a/256171.jpg");
     grid-area: content;
     background-color: #f0f0f0;
     padding: 20px;
+    /* background-image: linear-gradient(to right, #36454F , #A9A9A9); */
+    background: linear-gradient(to bottom, #003366 0%, #e6e6e6 100%);
 }
 
+.facebook{
+    width:23px; 
+    height:23px;
+    padding-left: 70%;
+    padding-top: 4px;
+}
+
+.ig{
+    width:32px; 
+    height:32px;
+    padding-left: 15px;
+}
 .footer {
+    display:flex;
+    align-items: flex-start;
     grid-area: footer;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding-top: 15px;
+    /* display:flex; */
 }
