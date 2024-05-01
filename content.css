@@ -13,7 +13,7 @@ padding-right: 5vw;
 
 .content-section img {
 width: 18vw; /* The width of the image */
-margin-right: 1vw; /* Add margin to the right */
+margin-right: 1vw; /*  margin to the right */
 
 }
 .Background-section{
@@ -64,7 +64,7 @@ padding-right: 5vw;
   width: 35vw; 
   height:20vw;
   padding-left : 1vw;
-  margin-right: 1vw; /* Add margin to the right */
+  margin-right: 1vw; /* Margin the right */
   
 }
 
@@ -89,8 +89,8 @@ padding-right: 5vw;
 }
 
 .serv {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /*Make it into a flex container */
+  justify-content: space-between; /*Equal space between divisions */
   padding: 1vw;
   margin-top: 1vw;
 
@@ -102,30 +102,30 @@ font-size: 1.5vw;
 .serv p ,.serv2 p{
 font-size: 1vw;
 text-align: center;
-align-items: center;
+align-items: center; /* alligning the paragraph in serv and serv2 in the center */
 }
 
 .serv2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*The serv 2 has equal space between items */
   padding: 1vw;
 
 }
 
 .service1 {
   display: flex;
-  gap: 5vw;
+  gap: 5vw; /*gap between items in service 1 */
   
 }
 
 .service1 {
   
   margin-left: 10vw;
-  border: 0.3vw solid #000; /* Default border color */
+  border: 0.3vw solid #000; /* border color */
   padding: 1vw;
   background-color: #f9f9f9;
   transition: border-color 0.9s; /* Smooth transition on hover */
-  transition: padding 0.5s ease;
+  transition: padding 0.5s ease;/* Transition on padding,make it bigger when hover over it */
 
   a{
     color:#000;
@@ -136,12 +136,12 @@ align-items: center;
 
 .service1:hover {
   border-color: #ff0000; /* Change color on hover */
-  cursor : pointer;
+  cursor : pointer; /*When hovered over it , the cursor will change to pointer */
   padding: 1.9vw;
 }
 
 .service2 {
-  display: flex;
+  display: flex; /*flex container */
   gap: 5vw;
 
   a{
@@ -153,18 +153,18 @@ align-items: center;
 .service2 {
   
   margin-right: 8vw;
-  border: 0.3vw solid #000; /* Default border color */
+  border: 0.3vw solid #000; /* border color */
   padding: 1vw;
   background-color: #f9f9f9;
   transition: border-color 0.9s; /* Smooth transition on hover */
-  transition: padding 0.5s ease;
+  transition: padding 0.5s ease;/* Transition on padding,make it bigger when hover over it */
   text-align: center;
   
 }
 
 .service2:hover {
   border-color: #ff0000; /* Change color on hover */
-  cursor : pointer;
+  cursor : pointer;/*When hovered over it , the cursor will change to pointer */
   padding: 1.9vw;
 }
 
@@ -181,17 +181,17 @@ align-items: center;
 .service3 {
   
   margin-left: 10vw;
-  border: 0.3vw solid #000; /* Default border color */
+  border: 0.3vw solid #000; /* border color */
   padding: 1vw;
   background-color: #f9f9f9;
   transition: border-color 0.9s; /* Smooth transition on hover */
-  transition: padding 0.5s ease;
+  transition: padding 0.5s ease;/* Transition on padding,make it bigger when hover over it */
   
 }
 
 .service3:hover {
   border-color: #ff0000; /* Change color on hover */
-  cursor : pointer;
+  cursor : pointer;/*When hovered over it , the cursor will change to pointer */
   padding: 1.9vw;
 }
 
@@ -209,17 +209,17 @@ align-items: center;
 .service4 {
   
   margin-right: 8vw;
-  border: 0.3vw solid #000; /* Default border color */
+  border: 0.3vw solid #000; /* border color */
   padding: 1vw;
   background-color: #f9f9f9;
   transition: border-color 0.9s; /* Smooth transition on hover */
-  transition: padding 0.5s ease;
+  transition: padding 0.5s ease;/* Transition on padding,make it bigger when hover over it */
   
 }
 
 .service4:hover {
   border-color: #ff0000; /* Change color on hover */
-  cursor : pointer;
+  cursor : pointer;/*When hovered over it , the cursor will change to pointer */
   padding: 1.9vw;
 }
 
