@@ -267,9 +267,9 @@ width: 20vw;
 padding: 0.5vw; /*box size*/
 margin-bottom: 1.5vw; /*space between the boxes*/
 border: none;
-border-radius: 0.2vw;
+border-radius: 0.2vw;/*radius of the box */
 }
-.contact-form button {
+.contact-form button { /*styles on the button like size,border size,color and cursor type when hovered */
 font-size: 1vw;
 width: 10vw;
 padding: 0.6vw;
