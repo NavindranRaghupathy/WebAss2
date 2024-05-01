@@ -1,0 +1,281 @@
+.content {
+  grid-area: content;
+  background: linear-gradient(to bottom , #20c997, #0d6efd, #530058);
+  /* background: linear-gradient(to bottom ,  , #530058); */
+}
+
+.content-section {
+display: flex; /*Make it a flex container */
+padding-left: 5vw;
+padding-right: 5vw;
+}
+
+
+.content-section img {
+width: 18vw; /* Adjust as needed */
+margin-right: 1vw; /* Add margin to the right */
+
+}
+.Background-section{
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5vw;
+  text-align:  center;
+}
+
+p{
+  color: black;
+  font-weight: bold;
+  font-size: 1.2vw;
+  padding: 1vw;
+}
+
+padding-left: 5vw;
+padding-right: 5vw;
+
+}
+
+.Mission{
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.5vw;
+     text-align:  center;
+    }
+  
+    p{
+      color: black;
+      font-weight: bold;
+      padding: 1vw;
+      font-size: 1.2vw;
+
+    }
+    
+    padding-left : 5vw;
+    padding-right : 5vw;
+
+}
+.content-section1 {
+  display: flex; /*Make it a flex container */
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+}
+.content-section1 img {
+  width: 35vw; 
+  height:20vw;
+  padding-left : 1vw;
+  margin-right: 1vw; /* Add margin to the right */
+  
+}
+
+.founders{
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.5vw;
+      text-align:  center;
+  }
+  p{
+    font-size: 1.2vw;
+    text-align: justify;
+  }
+  h2{
+    font-size: 1.5vw;
+  }
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1vw;
+  
+}
+
+.serv {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+  margin-top: 1vw;
+
+}
+.serv h3,.serv2 h3{
+font-size: 1.5vw;
+}
+
+.serv p ,.serv2 p{
+font-size: 1vw;
+text-align: center;
+align-items: center;
+}
+
+.serv2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+
+}
+
+.service1 {
+  display: flex;
+  gap: 5vw;
+  
+}
+
+.service1 {
+  
+  margin-left: 10vw;
+  border: 0.3vw solid #000; /* Default border color */
+  padding: 1vw;
+  background-color: #f9f9f9;
+  transition: border-color 0.9s; /* Smooth transition on hover */
+  transition: padding 0.5s ease;
+
+  a{
+    color:#000;
+    text-decoration: none;
+  }
+  
+}
+
+.service1:hover {
+  border-color: #ff0000; /* Change color on hover */
+  cursor : pointer;
+  padding: 1.9vw;
+}
+
+.service2 {
+  display: flex;
+  gap: 5vw;
+
+  a{
+    color:#000;
+    text-decoration: none;
+  }
+}
+
+.service2 {
+  
+  margin-right: 8vw;
+  border: 0.3vw solid #000; /* Default border color */
+  padding: 1vw;
+  background-color: #f9f9f9;
+  transition: border-color 0.9s; /* Smooth transition on hover */
+  transition: padding 0.5s ease;
+  text-align: center;
+  
+}
+
+.service2:hover {
+  border-color: #ff0000; /* Change color on hover */
+  cursor : pointer;
+  padding: 1.9vw;
+}
+
+.service3 {
+  display: flex;
+  gap: 5vw;
+
+  a{
+    color:#000;
+    text-decoration: none;
+  }
+}
+
+.service3 {
+  
+  margin-left: 10vw;
+  border: 0.3vw solid #000; /* Default border color */
+  padding: 1vw;
+  background-color: #f9f9f9;
+  transition: border-color 0.9s; /* Smooth transition on hover */
+  transition: padding 0.5s ease;
+  
+}
+
+.service3:hover {
+  border-color: #ff0000; /* Change color on hover */
+  cursor : pointer;
+  padding: 1.9vw;
+}
+
+.service4 {
+  display: flex;
+  gap: 5vw;
+  text-align: center;
+
+  a{
+    color:#000;
+    text-decoration: none;
+  }
+}
+
+.service4 {
+  
+  margin-right: 8vw;
+  border: 0.3vw solid #000; /* Default border color */
+  padding: 1vw;
+  background-color: #f9f9f9;
+  transition: border-color 0.9s; /* Smooth transition on hover */
+  transition: padding 0.5s ease;
+  
+}
+
+.service4:hover {
+  border-color: #ff0000; /* Change color on hover */
+  cursor : pointer;
+  padding: 1.9vw;
+}
+
+.service1 , .service2{
+  width : 23vw
+}
+
+.service3 , .service4{
+  width : 23vw;
+}
+
+
+
+.word{
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.5vw;
+  text-align:  center;
+    }
+}
+
+.contact {
+display: flex;
+justify-content: space-between;
+padding: 2vw;
+}
+
+.contact-info, .contact-form {
+width: 30vw;
+margin-left: 2vw;
+}
+.contact-info h2, .contact-form h2 {
+color: #f06;
+font-size: 2vw;
+}
+.contact-info p{
+color: white;
+font-size: 1vw;
+}
+.contact-info p, .contact-info address {
+margin-bottom: 1vw;
+}
+.contact-form input, .contact-form textarea {
+width: 20vw;
+padding: 0.5vw; /*box size*/
+margin-bottom: 1.5vw; /*space between the boxes*/
+border: none;
+border-radius: 0.2vw;
+}
+.contact-form button {
+font-size: 1vw;
+width: 10vw;
+padding: 0.6vw;
+background-color: #f06;
+color: #fff;
+border: none;
+border-radius: 0.2vw;
+cursor: pointer;
+}
