@@ -1,7 +1,7 @@
 .content {
   grid-area: content;
   background: linear-gradient(to bottom , #20c997, #0d6efd, #530058);
-  /* background: linear-gradient(to bottom ,  , #530058); */
+  /* Give the background of the content part a gradient color mix */
 }
 
 .content-section {
@@ -12,20 +12,20 @@ padding-right: 5vw;
 
 
 .content-section img {
-width: 18vw; /* Adjust as needed */
+width: 18vw; /* The width of the image */
 margin-right: 1vw; /* Add margin to the right */
 
 }
 .Background-section{
 h1{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5vw;
-  text-align:  center;
+  font-family: 'Times New Roman', Times, serif; /*The font type used */
+  font-size: 2.5vw; /*font size*/
+  text-align:  center; /*Alignning the h1 header type to the center */
 }
 
 p{
   color: black;
-  font-weight: bold;
+  font-weight: bold; /* The paragraph are bold */
   font-size: 1.2vw;
   padding: 1vw;
 }
