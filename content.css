@@ -224,45 +224,45 @@ align-items: center; /* alligning the paragraph in serv and serv2 in the center 
 }
 
 .service1 , .service2{
-  width : 23vw
+  width : 23vw; /*Space between service 1 and service 2 */
 }
 
 .service3 , .service4{
-  width : 23vw;
+  width : 23vw; /*Space between service 3 and service 4 */
 }
 
 
 
 .word{
   h1{
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Times New Roman', Times, serif;/* font type */
       font-size: 2.5vw;
-  text-align:  center;
+  text-align:  center; /* alligning the text to the middle/center */
     }
 }
 
 .contact {
-display: flex;
-justify-content: space-between;
+display: flex; /*flex container */
+justify-content: space-between; /* equal space */
 padding: 2vw;
 }
 
-.contact-info, .contact-form {
+.contact-info, .contact-form { /* the space between the contact-info class and ccontact-form class */
 width: 30vw;
 margin-left: 2vw;
 }
-.contact-info h2, .contact-form h2 {
+.contact-info h2, .contact-form h2 { /* to style h2 in both contac-info n contact-form class */
 color: #f06;
 font-size: 2vw;
 }
-.contact-info p{
+.contact-info p{ /* paragraph style */
 color: white;
 font-size: 1vw;
 }
 .contact-info p, .contact-info address {
 margin-bottom: 1vw;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input, .contact-form textarea { /*styles on the input and textarea in the contact-form class */
 width: 20vw;
 padding: 0.5vw; /*box size*/
 margin-bottom: 1.5vw; /*space between the boxes*/
