@@ -6,26 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout Example</title>
 	<link rel = 'stylesheet' href = 'stylegs.css'>
+    <link rel = 'stylesheet' href = 'content.css'>
+    <link rel = 'stylesheet' href = 'left-menu.css'>
+    <link rel = 'stylesheet' href = 'header.css'>
+
+    <style>  <!--style for right menu-->
+        .right-menu a:link { /*this for the link of the news*/
+		color: blue; /*blue in color when the enter the website*/
+		background-color: transparent;
+		text-decoration: none;
+	}
+		
+		.right-menu a:hover { /*style for hovering when pointing the link*/
+		color: red; /*red in color when hovering */
+		background-color: transparent;
+		text-decoration: underline;
+	}
+		.right-menu a:active { /*style for hovering when clicking the link*/
+		color: blue; </*blue in color after clicking the link */
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	
+	div.scroll-container { /*this class to get multiple images in one area, there will be scroll bar to switch the images*/
+		background-color: #555;
+		overflow: auto; /*this will be produce the scroll bar, if the the image is more than one */
+		white-space: nowrap;
+		padding: 0vw;
+	}
+
+	div.scroll-container img {
+	padding: 0vw; /*padding for the image, it is 0 because just fit to the box*/
+	}
+	
+	div.c { /*c class for the font size of the updated time for the news*/
+		font-size: 0.9vw;
+	}
+    </style>
+    
 </head>
 <body>
     <header class="header">
-		<img class = "image" src="WhatsApp_Image_2024-04-17_at_22.45.10_94ea09f2-removebg-preview.png"">
-		<a class = "link link1" href = "https://my.utm.my/login" target = "_blank">Login</a>
-		<a class = "link link2" href = "https://www.utm.my/" target = "_blank">Home</a>
-		<a class = "link link3" href = "https://www.utm.my/" target = "_blank">About Us</a>
+        <div class="image header">
+		<img class = "image" src="WhatsApp_Image_2024-04-17_at_22.45.10_94ea09f2-removebg-preview.png">
+        </div>
+        <div class="title header">
+        <h1 class="h1 agent">Agent P Cybersecurity</h1> 
+        </div>
 	</header>
+
+
     <nav class="left-menu">
         <div class="logo">Agent P</div>
-        <ul>
-            <li class="Home" ><a href="#"><img class = "img1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:20px; height:20px;"> Home</a></li>
-            <li><a class="About" href="#"><img class = "img1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:20px; height:20px;"> About Us</a></li>
-            <li><a class="Activity" href="#"><img class = "img1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:20px; height:20px;"> Calender</a></li>
-            <li><a class="Service" href="#"><img class = "img1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:20px; height:20px;"> Services</a></li>
-            <li><a class="Faq" href="#"><img class = "img1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:20px; height:20px;"> FAQ</a></li>
-        </ul>
+            <li class="Home" ><a href="#Back"><img class = "img 1" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:1.5vw; height:1.5vw;"> Background</a></li>
+            <li><a class="About" href="#Mission"><img class = "img 2" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:1.5vw; height:1.5vw;"> Our Mission</a></li>
+            <li><a class="Activity" href="#Found"><img class = "img 3" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:1.5vw; height:1.5vw;"> Founders</a></li>
+            <li><a class="Service" href="#our service"><img class = "img 4" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:1.5vw; height:1.5vw;"> Our Services</a></li>
+            <li><a class="Faq" href="#touch"><img class = "img 5" src="png-transparent-arrow-illustration-arrow-icon-right-arrow-angle-web-design-internet-thumbnail-removebg-preview.png" style="width:1.5vw; height:1.5vw;"> Contact us</a></li>
     </nav>
-    <nav class="right-menu">Right Menu</nav>
-    <main class="content">Content</main>
-    <footer class="footer">&copy; 2024 copyright by Agent P</footer>
+
+    <nav class="right-menu"> <!--right menu class-->
+        <h1 style="color:red; font-size:1.3vw; text-align: center;" >Latest Updates</h1> <!--heading 1 with red colour-->
+        <h4 style = "font-size:1.2vw">CyberSecurity News!!!</h4>
+        
+        <div class="scroll-container"> <!--class for scroll bar for images in the news-->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAy7Zg46SfkdWKVbWWWYm7Ci6ziWnbxduVIOCf-DnAIQ&s" width="180" height="100">
+            <img src="https://www.reuters.com/resizer/v2/WXCBNRSG7NL6JPDQQKQFVFYKN4.jpg?auth=ec67f856eba0191dbefba2f4211524f4ec6ba95908b7d07978de155cce46d97f&width=960&quality=80"width="180" height="100">
+        </div>
+        <a href="https://www.weforum.org/agenda/2023/04/cybersecurity-news-cyber-threats/" target="_blank" style = "font-size:1.2vw">News in brief: Top cybersecurity stories this month</a> <!--class a for the link hovering-->
+        <div class="c">April 23, 2024 2:18 PM </div>
+        <div class="c">Updated 2 days ago </div>
+        
+        
+        
+        <br>
+        <br>
+        <div class="scroll-container">
+            <img src="https://www.reuters.com/resizer/v2/R5VBK4CIDZIOZBWZUXUBMEJ6NU.jpg?auth=2afb172b725dba227fb9f547fd5c9383750a45441be6756b8fcc3b7ceb38ffb8&width=960&quality=80" width="180" height="100">
+            <img src="https://images.theconversation.com/files/589932/original/file-20240423-16-39y4qs.jpg?ixlib=rb-4.1.0&rect=0%2C0%2C8000%2C4500&q=45&auto=format&w=926&fit=clip" width="180" height="100">
+            </div>
+        <a href="https://www.wired.com/story/p4x-north-korea-internet-hacker-identity-reveal/" target="_blank" style = "font-size:1.2vw">North Korea hacking teams hack South Korea defence contractors - police</a>
+        <div class="c" >May 15, 2024 4:16 PM </div>
+        <div class="c">Updated 3 months ago </div>
+        
+        <br>
+        <br>
+        <div class="scroll-container">
+            <img src="https://menafn.com/updates/pr/2024-04/28/AFP_5316cimage_story.jpg" width="180" height="100">
+            <img src="https://www.bing.com/th?id=OVFT.6oqA4kNepQTrFDlLNfq_hi&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.5" width="180" height="100">
+            </div>
+        <a href="https://menafn.com/1108147326/Cybersecurity-firm-Darktrace-accepts-5-bn-takeover" target="_blank" style = "font-size:1.2vw">Cybersecurity firm Darktrace accepts $5 bn takeover</a>
+        <div class="c">4/28/2024 2:07:48 AM </div>
+        <div class="c">Updated 4 days ago </div>
+        
+        <br>
+        <br>
+        <div class="scroll-container">
+            <img src="https://www.bing.com/th?id=OVFT.fvVKoYBNamP4OgMqBGjedS&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.5" width="180" height="100">
+            <img src="https://th.bing.com/th?id=OIP.wYXkN9FY_YIx8FoPfTWemwHaFj&w=200&h=150&c=8&rs=1&bgcl=887dfe&r=0&o=6&dpr=1.5&pid=5.1" width="180" height="100">
+            </div>
+        <a href="https://www.forbes.com/sites/davidbalaban/2024/04/27/how-computer-vision-is-transforming-cybersecurity/?sh=6f7ec1ccf395" target="_blank" style = "font-size:1.2vw">How Computer Vision Is Transforming Cybersecurity</a>
+        <div class="c">4/1/2024 4:57:49 PM </div>
+        <div class="c">Updated 10 days ago </div>
+        
+        
+        <br>
+        <br>
+        <h4 style = "text-align:center; font-size:1.2vw">Keep Installing Your Latest Version</h4>
+        </nav>
+
+    <main class="content">
+
+        <div class = "Background-section">
+            <h1 id="Back">Background</h1>
+            <p>Welcome to Agent P CyberSecurity, where cybersecurity expertise meets innovation! Founded by a dynamic team of three
+                 Mr.Kuganraj , Mr.Navindran and Mr.Kuganes.Our company is dedicated to providing top-notch cybersecurity
+                  services tailored to meet the needs of individuals, businesses, and organizations alike.</p>
+                  </div>
+                  <hr>
+        <div class = "Mission">
+            <h1 id="Mission">Our Mission</h1>
+            <p>At Agent P CyberSecurity, our mission is simple: to empower our clients with the knowledge and tools necessary to navigate 
+                the ever-evolving digital landscape securely. We strive to be a trusted partner in safeguarding digital assets and promoting
+                 online safety for all.</p>
+        </div>
+        <hr>
+        <div class = "founders">
+        <h1 id="Found">Founders</h1>
+        <div class="content-section">
+              <img src="Kugan.jpg" >
+             <div> <h2>KUGANRAJ RAMESH</h2>
+             <p>I'm Kuganraj, a cybersecurity enthusiast driven by my passion for securing the digital realm. 
+                With a love for unraveling complex challenges, I dive headfirst into the world of web security and data privacy.
+                 I bring creativity and dedication to every project, aiming to make our online spaces safer for everyone.</p>
+            <p>Email:kuganraj@graduate.utm.my</p>
+             </div>
+        </div>
+    <br>
+    <br>
+      <div class="content-section">
+              <img src="Navin.jpg" >
+             <div> <h2>NAVINDRAN RAGHUPATHY</h2>
+             <p>I'm Navindran, a computer science enthusiastic with a deep interest in cybersecurity. I thrive on understanding 
+                 inner workings of technology and its vulnerabilities. With an analytical mindset and attention to detail, I'm constantly
+                  on the lookout for ways to enhance our defenses against cyber threats.</p>
+                  <p>Email : navindran@graduate.utm.my</p>
+             </div>
+        </div>
+    <br>
+    <br>
+         <div class="content-section1">
+                  <img src="Kuganes.jpg" >
+                 <div> <h2>KUGANES VARMAN BALAN</h2>
+                 <p>I'm Kuganes, a proactive advocate for cybersecurity awareness. I believe in the power of education to combat digital
+                     dangers. Through engaging presentations and workshops, I strive to empower individuals and organizations with the
+                      knowledge they need to stay safe online. Together, let's build a more secure digital future</p>
+                      <p>Email:kuganesvarman@graduate.utm.my</p>
+                 </div>
+                 
+        </div>
+    
+    </div>
+    <hr>
+    <div class = "word">
+    <h1 id="our service">Our services</h1>
+</div>
+   <div class = "serv">
+    <div class="service1">
+        
+        <h3></a>Cybersecurity Consultation </a></h3>
+        <p>We provide quality Cybersecurity Consultation on current issues</p>
+    </div>
+    <br>
+    <div class="service2">
+        
+        <h3>Penetration Testing</h3>
+        <p>We provide the best penetration results</p>
+    </div>
+</div>
+    <br>
+    <div class = "serv2">
+    <div class="service3">
+        
+        <h3>Cybersecurity Awareness Campaigns</h3>
+        <p>We do monthly Cybersecurity Awareness Campaigns.Join Us!!</p>
+    </div>
+    <br>
+    <div class="service4">
+        
+        <h3>Cybersecurity Training and Workshops</h3>
+        <p>We provide training and workshops to newcomer on Cybersecurity</p>
+    </div>
+</div>
+
+    <br>
+    <br>
+<hr>
+    
+    <div class="contact">
+        <div class="contact-info">
+          <h2 id="touch">Get in touch</h2>
+          <p>Feel free to get in touch with us. We are always open to discussing new projects,
+             creative ideas or opportunities to be part of your visions.</p>
+            <p>Address:</p>
+            <p>UTM 81010 SKUDAI,</p>
+           <p> JOHOR BAHRU,MALAYSIA</p>
+          <p><strong>Email Address:</strong> AgentP@graduate.utm.my</p>
+          <p><strong>Phone Number:</strong> 111 111 111</p>
+        </div>
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+        
+    </div>
+        </main>
+
+        <footer class="footer">
+        <p>&copy; 2024 copyright by Agent P</p>
+        <a class="icon1" href="https://www.facebook.com/" target="_blank"><img class = "facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAgVBMVEUAAAAQcP8IZf8IZ/8JZv8HZf8IZv8IZv8IaP8JZ/8HZv8IZv8FZf8YcP9FjP+TvP/g7P/////R4/9Vlf8QYP+Es/9kn/8IZv8nef8JZf8AYP/v9f/Q4v/B2P9GjP8HZv+yz//Q4/83g/8HZv/g6/+Dsv8HZf/n7//////////e6//ZLyHjAAAAK3RSTlMAEGCfz+//XyCQj98w/////////xD//6D/kBD/////7////8///5Cgz+/vONkvXQAAAPJJREFUeAF9kkUCwzAMBGVSGMrM3P//rxBaB+e6s0YREFJpw2y0cgS1cT3DQLmNWPjcwK/XA24RWIuEdg4j7OtHUX0NYedxko5+jCeZMc0En8FsVDDHSd1WDoFdIlogX46awopozWA+ythsd7s9ZxymJBkcs3wcMZC0YHDKhDNbKLowuGYC21zINIWUbQ7EwwJT7YogqgTTKaTY4tIp7HDIRadwwzVlKVyv11HG9cekFBxam8FbTInuQ4LCd3cL2Uzd+4UV/VkHfUIgMLRdQuBi7JsCxh5rQEAfrO9NYSWojruwBOOhDoR8PF+j0fuipNX+AmbCIviMIiwCAAAAAElFTkSuQmCC"></a>
+        <a class="icon2" href="https://www.tiktok.com/en/" target="_blank"><img class = "insta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAhFBMVEVHcEwbFyAbFR8bFR4gFBsiExkbFiAeFB0kEhgbFiAnERYrAAAuDxIHoJsLAQAC//ed+/e/2NmsACMVERL/////A0gEEhPyrr1XAA8Jv7j/zNfYADgcPT3/6O9T+/S8/vvZ+vmKAibZP2X/S3YA7eT+epYcFR4aFiD5bYsagX2WX23/cpIvOAPpAAAACnRSTlMAb8Hw//9f//+MVnReTQAAAX5JREFUeAFdkwdiwjAQBOWGAgruvTtNKf//X9Yn7gwsnRmvbRVF8fwgDKO7hGHge4pz0iHhF45TQn1y/HzwC4UcMs5yvGBRjg6tiTM2CCm7oTWu74G/misSH4anfCcQRUySplle4JcTfBUQd8JlF8qyrGqpCBQXEL4JTXuRil3gAhZgxMag4l4AFwHJOlypE+QSRXDBldI5RABDDqEf6ifBjNeuM7swDc2doEkA75J5WXMS8nh7e3eCXKT5SFYUVzEJRRHH0cNdmA7gTnATJkJ0GffjP6uKhaeBisx13nlOtykN4BC+YISmS1G/YQpYkPlmYYEALg3EIXwpq3WozRXCd4yCHwg9BpELrLJfMF5GnKL8jcHx5W8rgIl/QdgNbboSST8+wKeqjoRbFZARxlnJqbbi4IHyretgo6/yGpQ4kK88y8Zv0/fNO27WYeLWU8qSAaWO221r6+KGidt941hRbF1bjU/B9qSQs2UFElHG9gzMHRyBfDxvf/sU3v7/p6c6d0XDWZwAAAAASUVORK5CYII="></a>
+        <a class="icon3" href="https://www.youtube.com/" target="_blank"><img class = "you" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAwklEQVR4AWNwL/ChKx6GFo5a+J+BQRmIfYE4HYgrgLgLiOdA8VqsGCHfBdWTDjVDGaeFQElmIL4CxP+pjK/gsnA7SAGN8FpsFv6nJUaxECggSmsLQXYgW2hOlKbs7P//7ezItVAf2UJfojTNnv0fDNauJcdCX2QLo0iwEAHa2si2MJ1ECxHg1StIUBPWH0V3C+kepOQnmi1byE809M8W9M/49C/a6F940796wqyAo/BUvtuRMZ5KOApk1mibhmI8aiEAWJrZd6IgmiUAAAAASUVORK5CYII="></a>
+        <a class="icon4" href="https://www.instagram.com/" target="_blank"><img class = "insta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABOFBMVEVHcExxF/13F/1zFf2AFv2MCu+iBOmyAuLEAd7SANraBMzwHpedI+XeANfmANHmAr+PF/6fD/vxAL7qArV7GP21FvnRVurnZ+P2Z9roQeDzGtXzB8v7AqvWiPn+7fn////7ftv/A7z0BKH3v/H+3fT+ruj+AJr/9/r/RcD/bMDKFff/Bo3iG+r8GrX/AIH+H5r/yeP+BHj/t9n/V5r+Am7+H37+BGT/ssX/Imz/RXv/ucz+e4z+JFT/XI3/MGL+LUf/u7f/yc7/Alr+OUf+MSz+QzT+R0T+iHD+SRj+VzH+WQX+AkL+c2L/0sT+aCX+cBL/7+j+aQL+eRv/oUX/fwL+iBD/wXz+jgD/3rr/1rn+dgz+nAP9FpT+lw7+qgH+tQD+vQD/w1f9kwf/xAD9PFn9ogj/ywD9uAfgLZLBAAAAaHRSTlMAW9H+////////xEsC///N////zFz/////////////////uP////7///////////7////////////////////////////////////////////////////////F/7VQ///+/87/vsj/uqL0GQwAAAHcSURBVHgBRMlFehwxEEDhV1VS04yZ7U04m+AmcBjfLLscJ4xLHyA0YGqSlJ7P9MT6BRC52EEQuDjlFITx2eWvXJsDQWYIKgJj4VQW5gBJAg75K5vTgZDTFUEu/kUEzqGaiC6DMBbhpqQyoyKTNYD1Hp+Ui6J0ZH1HhXNA0RfzyRIZl5WprroK3BZwwvx0aUGdB87HCIN5VBUVP9i468ZLxWLv+pg6vJmDaSiSW2eyIRNg84/HxfVJmTD3DxFWGmWjrosRpxMNGr3iIqYbG7IGK5lKvZE3jVuTynsDzHRoD3xpxaTQvIKumGBWgCouM9bPKEisJg0VTV4X0aBqQEuXQ2kGlmVmZCtgCoxBJfeAz0b8NQbWI7wOAKCZMgbn9E6tItG1HFTKRQ4jgSYpiiPu6BFJW1fW9J7oDFWWgpf0MH09YnB6yIEYnIJhLhqkpw3aC4OuUJ4QlDzX55/Um5m4Ue6dmXr59LwkBM0xy/ieVNV7zSSTZMU3fs8UNBomr+v3jQx5X1XmB7tdgnNu1JqDl+0nbnp+HpLp+WM5bB0mIMJFc/ouSgjd+U99O1qYONOhFEMonPcZCZ6eGp9eRcSwhWkSRCIxKnfeIMBh1WRcFOhTaENo/096OTA7AACDzKODDThakgAAAABJRU5ErkJggg=="></a>
+    </footer>
+
+    
 </body>
 </html>
